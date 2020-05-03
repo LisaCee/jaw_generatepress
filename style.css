@@ -34,3 +34,21 @@
 .inside-header {
   padding: 1%;
 }
+
+.woocommerce a.button.alt {
+  background-color: #0d60bb;
+}
+
+h2.woocommerce-loop-product_title {
+  color: black;
+  font-weight: bolder;
+}
+
+.woocommerce.ul.products li.product,
+.woocommerce-page ul.products li.product {
+  height: 500px;
+}
+
+div.inside-article {
+  background-color: grey;
+}
