@@ -52,3 +52,16 @@ h2.woocommerce-loop-product_title {
 div.inside-article {
   background-color: grey;
 }
+
+.entry-content {
+  border: 1px solid purple;
+  padding: 3%;
+}
+
+.woocommerce button.button.alt {
+  background-color: #0d60bb;
+}
+
+.woocommerce button.button.alt:hover {
+  background-color: #0e447e;
+}
