@@ -54,8 +54,8 @@ div.inside-article {
 }
 
 .entry-content {
-  border: 1px solid purple;
   padding: 3%;
+  margin: 1em 0 0;
 }
 
 .woocommerce button.button.alt {
@@ -64,4 +64,12 @@ div.inside-article {
 
 .woocommerce button.button.alt:hover {
   background-color: #0e447e;
+}
+
+.entry-title {
+  margin-left: 4%;
+  padding-top: 3%;
+}
+.type-page {
+  padding: 1%;
 }
