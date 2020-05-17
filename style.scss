@@ -11,12 +11,6 @@
  Text Domain:  generatepress
 */
 
-/* colors inspired by google maps
-background #1A73E8
-hover background #185ABC / white
-light #D1E3FA
-*/
-
 $blue: #1a73e8;
 $dark-blue: #185abc;
 $light-blue: #e3eefc;
@@ -36,7 +30,7 @@ $dark-grey: #332e2e;
 .main-navigation .main-nav ul li:focus > a,
 .main-navigation .main-nav ul li.sfHover > a {
   background-color: $light-blue;
-  border: 0.5px solid $dark-grey;
+  border: 0.5px solid $dark-blue;
   font-weight: bold;
   color: $dark-grey;
 }
@@ -74,14 +68,18 @@ a.button.add_to_cart_button {
 }
 // end buttons
 
-h2.woocommerce-loop-product_title {
-  color: black;
-  font-weight: bolder;
+a,
+a:visited {
+  color: $dark-grey;
 }
 
-.woocommerce.ul.products li.product,
-.woocommerce-page ul.products li.product {
-  height: 500px;
+h2.woocommerce-loop-product__title {
+  font-weight: 600;
+  height: 50px;
+}
+
+span.woocommerce-Price-amount {
+  color: $dark-blue;
 }
 
 // account

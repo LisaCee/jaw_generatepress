@@ -10,11 +10,6 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  generatepress
 */
-/* colors inspired by google maps
-background #1A73E8
-hover background #185ABC / white
-light #D1E3FA
-*/
 .main-navigation {
   background-color: #1a73e8;
 }
@@ -29,7 +24,7 @@ light #D1E3FA
 .main-navigation .main-nav ul li:focus > a,
 .main-navigation .main-nav ul li.sfHover > a {
   background-color: #e3eefc;
-  border: 0.5px solid #332e2e;
+  border: 0.5px solid #185abc;
   font-weight: bold;
   color: #332e2e;
 }
@@ -64,14 +59,18 @@ a.button.add_to_cart_button:hover {
   background-color: #185abc;
 }
 
-h2.woocommerce-loop-product_title {
-  color: black;
-  font-weight: bolder;
+a,
+a:visited {
+  color: #332e2e;
 }
 
-.woocommerce.ul.products li.product,
-.woocommerce-page ul.products li.product {
-  height: 500px;
+h2.woocommerce-loop-product__title {
+  font-weight: 600;
+  height: 50px;
+}
+
+span.woocommerce-Price-amount {
+  color: #185abc;
 }
 
 .entry-content {
