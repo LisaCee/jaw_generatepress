@@ -10,59 +10,69 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  generatepress
 */
+
 /* colors inspired by google maps
 background #1A73E8
 hover background #185ABC / white
 light #D1E3FA
 */
-.main-navigation {
-  background-color: #1a73e8;
-}
 
-.main-navigation .main-nav ul li[class*=current-menu-] > a {
-  background-color: #e3eefc;
+$blue: #1a73e8;
+$dark-blue: #185abc;
+$light-blue: #e3eefc;
+$dark-grey: #332e2e;
+
+// navigation
+.main-navigation {
+  background-color: $blue;
+}
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+  background-color: $light-blue;
   font-weight: bold;
-  color: #332e2e;
+  color: $dark-grey;
 }
 
 .main-navigation .main-nav ul li:hover > a,
 .main-navigation .main-nav ul li:focus > a,
 .main-navigation .main-nav ul li.sfHover > a {
-  background-color: #e3eefc;
-  border: 0.5px solid #332e2e;
+  background-color: $light-blue;
+  border: 0.5px solid $dark-grey;
   font-weight: bold;
-  color: #332e2e;
+  color: $dark-grey;
 }
 
-.main-navigation .main-nav ul li[class*=current-menu-] > a:hover,
-.main-navigation .main-nav ul li[class*=current-menu-].sfHover > a {
-  background-color: #e3eefc;
-  color: #332e2e;
+.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover,
+.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a {
+  background-color: $light-blue;
+  color: $dark-grey;
 }
 
+// shop
+// buttons
 .woocommerce a.button.alt {
-  background-color: #1a73e8;
+  background-color: $blue;
   color: white;
-}
-.woocommerce a.button.alt:hover {
-  background-color: #185abc;
+  &:hover {
+    background-color: $dark-blue;
+  }
 }
 
 a.button.add_to_cart_button {
-  background-color: #1a73e8;
+  background-color: $blue;
   color: white;
-}
-a.button.add_to_cart_button:hover {
-  background-color: #185abc;
-  color: white;
+  &:hover {
+    background-color: $dark-blue;
+    color: white;
+  }
 }
 
 .woocommerce button.button.alt {
-  background-color: #1a73e8;
+  background-color: $blue;
+  &:hover {
+    background-color: $dark-blue;
+  }
 }
-.woocommerce button.button.alt:hover {
-  background-color: #185abc;
-}
+// end buttons
 
 h2.woocommerce-loop-product_title {
   color: black;
@@ -74,6 +84,7 @@ h2.woocommerce-loop-product_title {
   height: 500px;
 }
 
+// account
 .entry-content {
   padding: 3%;
   margin: 1em 0 0;
@@ -83,16 +94,14 @@ h2.woocommerce-loop-product_title {
   margin-left: 4%;
   padding-top: 3%;
 }
-
 .type-page {
   padding: 1%;
 }
 
+// About
 button.kb-forms-submit.button {
-  background-color: #1a73e8;
+  background-color: $blue;
+  &:hover {
+    background-color: $dark-blue;
+  }
 }
-button.kb-forms-submit.button:hover {
-  background-color: #185abc;
-}
-
-/*# sourceMappingURL=style.css.map */
